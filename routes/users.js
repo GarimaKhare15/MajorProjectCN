@@ -8,6 +8,7 @@ router.get('/profile',passport.checkAuthentication,usersController.profile);
 
 router.get('/sign-up',usersController.signUp);
 router.get('/sign-in',usersController.signIn);
+<<<<<<< HEAD
 
 router.post('/create',
 usersController.create);
@@ -45,4 +46,9 @@ router.post('/create-session', passport.authenticate(
 
 router.get('/sign-out', usersController.destroySession);
 
+=======
+router.post('/create',usersController.create);
+router.post('/create-session',usersController.createSession);
+router.get('/sign-out',usersController.signOut);
+>>>>>>> be0665d12de5978af87cfa17c81ecb70a10f822c
 module.exports = router;
